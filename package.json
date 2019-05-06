@@ -2,10 +2,10 @@
   "name": "nodeblockchain",
   "version": "1.0.0",
   "description": "Demo NodeJS Blockchain Example",
-  "main": "index.js",
+  "main": "sample.js",
   "scripts": {
     "start": "nodemon server.js",
-    "sample": "nodemon index.js",
+    "sample": "nodemon sample.js",
     "tests": "mocha"
   },
   "author": "",
@@ -14,8 +14,7 @@
     "body-parser": "^1.18.3",
     "crypto-js": "^3.1.9-1",
     "express": "^4.16.3",
-    "keypair": "^1.0.1",
-    "ws": "^6.0.0"
+    "keypair": "^1.0.1"
   },
   "devDependencies": {
     "chai": "^4.1.2",

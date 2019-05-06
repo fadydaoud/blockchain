@@ -7,12 +7,13 @@ const difficuly = 4;
 const minersReward = 1;
 
 const utility = new Utility();
-const genesisAddress = 'genesis'; //utility.getNewWalletAddress();
-const minersAddress1 = 'miner'; //utility.getNewWalletAddress();
-const minersAddress2 = 'miner2'; //utility.getNewWalletAddress();
-const userAddress1 = 'user1'; //utility.getNewWalletAddress();
-const userAddress2 = 'user2'; //utility.getNewWalletAddress();
-const userAddress3 = 'user3'; //utility.getNewWalletAddress();
+//utility.getNewWalletAddress();
+const genesisAddress = 'genesis';
+const minersAddress1 = 'miner';
+const minersAddress2 = 'miner2';
+const userAddress1 = 'user1';
+const userAddress2 = 'user2';
+const userAddress3 = 'user3';
 
 var blockChain = new BlockChain(totalSupply, genesisAddress, genesisAddressBalance, difficuly, minersReward);
 
@@ -25,8 +26,6 @@ blockChain.mineBlock(minersAddress2);
 blockChain.addTransction(minersAddress1, genesisAddress, 5);
 blockChain.mineBlock(minersAddress2);
 blockChain.mineBlock(minersAddress2);
-// blockChain.mineBlock(minersAddress1);
-// blockChain.mineBlock(minersAddress1);
 
 console.log('system: ', blockChain.getBalance('system'));
 console.log('genesis: ', blockChain.getBalance(genesisAddress));

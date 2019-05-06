@@ -1,6 +1,4 @@
 const BlockChain = require("./Core/BlockChain");
-// const Block = require("./Core/Block");
-// const Transaction = require("./Core/Transaction");
 const Utility = require("./Core/Utility");
 
 const utility = new Utility();
@@ -16,14 +14,10 @@ blockChain.addTransction(rootAddress, address2, 50);
 blockChain.addTransction(address1, address3, 40);
 blockChain.addTransction(address2, address3, 10);
 
-//blockChain.mineBlock();
-//blockChain.mineBlock();
-
 //---------------------------------------------------------------------------
 
 const express = require("express");
 const bodyparser = require("body-parser");
-// const websockets = require("ws");
 const httpServerPort = 3000;
 let walletAddress = "";
 
@@ -57,10 +51,6 @@ app.get("/mineBlock", (req, res) => {
 		);
 	else res.send(`No New Transactions To Mine...`);
 });
-
-// app.get("/getBlockchain", (req, res) => {
-// 	res.send("Retrieved The Latest BlockChain...");
-// });
 
 app.listen(httpServerPort, () =>
 	console.log(`Server started on port: ${httpServerPort}`)
